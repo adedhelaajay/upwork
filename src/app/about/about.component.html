@@ -1,0 +1,203 @@
+<!-- <app-header></app-header> -->
+<section class="hero is-small is-info" id="aboutpageid">
+    <div class="hero-body"></div>
+    <div class="container">
+        <h1 class="title has-text-centered">About Us!</h1>
+    </div>
+    <!-- <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="name" content="Church of Christ karmanghat, Hyderabad, Telangana. India">
+    <meta name="description" content="Church of Christ karmanghat, Hyderabad, Telangana. India">
+	  <meta name="keywords" content="Agriculture Colony Church, Meerpet Church, TKR College Church, karmanghat Church of Christ, Ring Road Church of Christ, Church of Christ Hyderabad, Hyderabad Church of Christ, Church of Christ, CHURCH, CHRIST, Christ, Church, Christian, Believer, Prayer, Brother, Truth, Salvation, Rangareddy Church, Jesus, Bible, gosple">
+    <meta name="author" content="Krupadanam Adedhela">
+    <meta name="website" content="http://churchofchrist.jointruth.com/">
+
+    <title>Church of Christ Hyderabad, Telangana | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo-coc.png" alt>
+
+    <script>
+      function callAwsLambdaFunction(e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var note = "Request for newsletter.";
+        var data = JSON.stringify({
+          "data": {
+            "subject": "Request from Church website!",
+            "name": name,
+            "email": email,
+            "body": note
+          }
+        });
+        var url = "https://cf80f2yh59.execute-api.us-east-1.amazonaws.com/dev/myLamdaDemo"
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+        xhr.onreadystatechange = function() { // Call a function when the state changes.
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            // Request finished. Do processing here.
+            alert("Thank you! " + name + ", your request received.")
+            // return "Thank you! " + name + ", your request received.";
+          }
+        }
+        xhr.send(data);
+        document.getElementById("myForm").reset();
+      }
+    </script>
+  </head> -->
+    <!-- <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Church</span> of Christ</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
+</section>
+<section id="newsletter">
+    <div class="container Subscribe">
+        <h1>Subscribe To Our Newsletter</h1>
+        <!-- <form id="myForm" action="#" onsubmit="callAwsLambdaFunction(event)">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email...">
+            <button type="submit" class="button is-info">Subscribe</button>
+        </form> -->
+        <form  id="myForm" action="#" (ngSubmit)="submitForm()" #contactForm="ngForm">
+                <input type="text" id="name" name="name"  placeholder="Enter Name" class="input" [(ngModel)]="name" #nameInput="ngModel" required="">
+                <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
+                    Please enter your name.
+                </div>
+                <input type="email" id="email" placeholder="Enter Email..." name="email" class="input" [(ngModel)]="email" #emailInput="ngModel" required="">
+
+                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+                    Please enter a valid email address.
+                </div>
+            <button type="submit" class="button is-small is-warning" [disabled]="contactForm.invalid">
+                Subscribe
+            </button>
+        </form>
+    </div>
+</section>
+
+<section id="main">
+    <div class="container">
+        <article id="main-col">
+            <p class="p-title"><strong>About Us & Our Belief: </strong></p>
+            <p>
+                Our beliefs ... how does one confine a statement of belief that involves so much (the whole Bible)
+                and
+                means so much to us (more than our own lives) to a brief, concise, yet attractively informative
+                statement on a Web page? That is my task here and I beg your forgiveness for the clumsiness of the
+                effort to reduce such grand, vast and eternal truths to a few words.
+            </p>
+            <p class="p-title"><strong>Concerning God: </strong></p>
+            <p class="dark">
+                We believe, first of all that God is. Again, how does one stop there when such a weighty,
+                awe-inspiring
+                statement demands so much more? But for brevity's sake we must push on. We believe that those who
+                diligently seek Him are rewarded by Him in ways incomprehensible, with joy inexpressible and with
+                peace
+                that passes understanding. Believing that the God who presents Himself to us in the Bible is the
+                only
+                true God, we devote ourselves to Him heart, body and soul. He is our life. We believe that to honor
+                Him
+                we must serve the needs of our fellow man with the same diligence and passion with which He does. We
+                believe that He gave His only begotten Son that we might live; His Son died on the cross that our
+                penalty might be paid; He extended mercy and grace at great sacrifice to Himself. We can and will do
+                no
+                less.
+            </p>
+            <p class="p-title"><strong>Concerning Our Worship: </strong></p>
+            <p class="dark">
+                To honor Him we not only strive to offer Him our whole-life service every day of our lives, we offer
+                Him
+                our heart-felt worship. In accordance with His will, each first day of the week we humbly and
+                obediently
+                assemble with fellow believers to sing praises to His name as well as sing songs, hymns and
+                spiritual
+                songs to edify one another. In our worship we offer Him our prayers of petition, thanksgiving
+                and
+                supplication asking that He bless us with wisdom to use for His glory all that He gives us. While
+                gathered, we assemble around a table of fellowship with our Lord and one another remembering, as He
+                taught us, His death until He comes. In our assemblies we give attention to the reading and teaching
+                of
+                His word that our lives might be strengthened spiritually and that our spirits might be emboldened
+                to
+                carry out our God-given commission to go into all the world teaching the good news of salvation and
+                making disciples of those who believe. Also upon the first day of the week, in order to support the
+                works of His kingdom locally and throughout the world, we give back to Him in a financial way as He
+                has
+                prospered us. We find our instructions for these efforts to honor Him in the New Testament and will
+                gladly show them to any who are interested in the same.
+            </p>
+            <p class="p-title"><strong>Concerning Salvation: </strong></p>
+            <p class="dark">
+                As to doctrine, we have no creed but Christ. We believe that the Holy Bible is just that, holy; it
+                is
+                inspired (from the very breath) of God. While we have bothers and sisters of like precious faith
+                throughout the world we are not connected to any earthly religious body or headquarters and only
+                submit
+                to the rule of Heaven itself. To become a part of that body of believers, according to God's word
+                one
+                must come to know and trust the grace of the God of heaven by hearing the word of Christ (Romans
+                10:17).
+                Having come to a faith-filled knowledge of Him and of His Son we know we cannot be in His eternal
+                fellowship unless we are willing to turn from and put to death any passion for sin and choose rather
+                to
+                be His disciple (Luke 13:3; Romans 6:10). Because Jesus is the Son of God and because God has made
+                Him
+                King of kings and Lord of lords, we willingly and passionately confess His name (Matthew 10:32-33,
+                Romans 10:10) and submit to the washing away of the guilt of all past sins in the blood of Christ
+                through the God-given medium of baptism in water (Acts 2:38, 22:16). We strive to walk with Him in
+                light, looking to Him for guidance, and asking for His forgiveness for our failures, which He
+                mercifully
+                and willingly gives (1 John 1:5-9).
+            </p>
+            <br/>
+        </article>
+
+        <aside id="sidebar">
+            <p class="p-title has-text-centered"><strong>What We Do</strong></p>
+            <div class="dark">
+                <p>Matthew 28:19 "Go therefore and make disciples of all the nations, baptizing them in the name of
+                    the
+                    Father and of the Son and of the Holy Spirit, 20 teaching them to observe all things that I have
+                    commanded you; and lo, I am with you always, even to the end of the age."
+                    These are Matthew's last recorded words of Jesus. We often focus on verse 19 where He speaks of
+                    baptizing those who are made disciples. But there is more here than just baptizing those who
+                    believe, though that is certainly important. The mission we have received from the Lord Himself
+                    also
+                    includes teaching the baptized believers all things that Jesus had taught or commanded the
+                    apostles.
+                    Wow! What a mission!
+                    Submitting to His Lordship, we at the Church of Christ karmanghat, Hyderabad, hope to help
+                    people
+                    come to know our Lord. We want people to understand that the Son of God has come into the world
+                    to
+                    pay our sin debt and to show us the way to heaven. Our Christianity cannot simply be a
+                    ritualistic
+                    baptism and a few church services. Our Christianity must be a way of life that demonstrates the
+                    way
+                    of life that Jesus teaches us. So, it is our mission to show people how to belong to Christ and
+                    how
+                    to live with Christ living in us. We want people to know how to show mercy, how to forgive, how
+                    to
+                    be longsuffering, how to extend grace, how to be humble, how to have courage in the face of
+                    opposition, how to pray, how to live each day seeking to glorify God. Our mission, be it at home
+                    or
+                    abroad is to make disciples and to teach them to observe all things He has commanded us, and we
+                    do
+                    it with the sure knowledge that He is with us until the end.</p>
+            </div>
+        </aside>
+    </div>
+</section>

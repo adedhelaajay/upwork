@@ -1,0 +1,73 @@
+.ajay {
+    background-image: url("/assets//images/backgroud.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    // min-width:100vw;
+    width: 100%;
+}
+
+.home-verse {
+    opacity: 80%;
+}
+
+.homebox {
+    // display: flex;
+    columns: 2;
+    column-rule: 4px solid rgb(79, 227, 123);
+    // columns: 15em;
+    column-gap: 5em;
+    padding: 5%;
+    margin-left: 10%;
+}
+
+.homebox>.columns {
+    display: inline-block;
+    background-color: rgb(36, 36, 36);
+    border: 2px solid rgb(79, 185, 227);
+    break-inside: avoid;
+    opacity: 80%;
+    width: 40%;
+}
+
+// .parent {
+//     scroll-snap-type: y mandatory;
+// }
+
+// .parent > child {
+//     scroll-snap-align: top;
+// }
+
+/* ----Mobile only---- */
+
+@media screen and (max-width:601px) {
+
+    .title {
+        font-size: 3vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+    .homebox {
+        display: inline;
+        column-rule: 2px solid rgb(79, 227, 123);
+        columns: 5em;
+        column-gap: 2em;
+    }
+
+    .homebox>.columns {
+        display: block;
+        background-color: rgb(36, 36, 36);
+        border: 1px solid rgb(79, 185, 227);
+        break-inside: avoid;
+        opacity: 80%;
+        inline-size: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+/* ----END of Mobile only styling---- */

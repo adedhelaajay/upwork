@@ -1,0 +1,14 @@
+<div class="slide-in-navigation">
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+</div>
+
+<div class="slide-in-navigation" [@slideInOut]="isOpen ? 'in' : 'out'">
+    <!-- Navigation content -->
+    <h1>Slide Bar in Action!!</h1>
+</div>
+  

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>ChurchWebsite</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./ChurchWebsite_files/styles.css"><style>/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>.ajay[_ngcontent-ng-c70768716] {
+  background-image: url("/assets//images/backgroud.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.homebox[_ngcontent-ng-c70768716] {
+  columns: 2;
+  column-rule: 4px solid rgb(79, 227, 123);
+  column-gap: 5em;
+  padding: 5%;
+  margin-left: 25%;
+}
+
+.homebox[_ngcontent-ng-c70768716]    > .columns[_ngcontent-ng-c70768716] {
+  display: inline-block;
+  background-color: rgb(36, 36, 36);
+  border: 2px solid rgb(79, 185, 227);
+  break-inside: avoid;
+  opacity: 80%;
+}
+
+.parent[_ngcontent-ng-c70768716] {
+  scroll-snap-type: y mandatory;
+}
+
+.parent[_ngcontent-ng-c70768716]    > child[_ngcontent-ng-c70768716] {
+  scroll-snap-align: top;
+}
+
+
+
+@media screen and (max-width: 601px) {
+  .title[_ngcontent-ng-c70768716] {
+    font-size: 3vh;
+  }
+  h2[_ngcontent-ng-c70768716] {
+    font-size: 3vh;
+  }
+  .homebox[_ngcontent-ng-c70768716] {
+    display: inline;
+    column-rule: 2px solid rgb(79, 227, 123);
+    columns: 5em;
+    column-gap: 2em;
+  }
+  .homebox[_ngcontent-ng-c70768716]    > .columns[_ngcontent-ng-c70768716] {
+    display: block;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgb(79, 185, 227);
+    break-inside: avoid;
+    opacity: 80%;
+    inline-size: 80%;
+    margin-left: 10%;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksc0RBQUE7RUFDQSwyQkFBQTtFQUNBLDRCQUFBO0VBQ0Esc0JBQUE7RUFDQSxpQkFBQTtFQUVBLFdBQUE7QUFBSjs7QUFHQTtFQUVJLFVBQUE7RUFDQSx3Q0FBQTtFQUVBLGVBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7QUFGSjs7QUFLQTtFQUNJLHFCQUFBO0VBQ0EsaUNBQUE7RUFDQSxtQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtBQUZKOztBQUtBO0VBQ0ksNkJBQUE7QUFGSjs7QUFLQTtFQUNJLHNCQUFBO0FBRko7O0FBS0Esd0JBQUE7QUFFQTtFQUVJO0lBQ0ksY0FBQTtFQUpOO0VBT0U7SUFDSSxjQUFBO0VBTE47RUFRRTtJQUNJLGVBQUE7SUFDQSx3Q0FBQTtJQUNBLFlBQUE7SUFDQSxlQUFBO0VBTk47RUFTRTtJQUNJLGNBQUE7SUFDQSxpQ0FBQTtJQUNBLG1DQUFBO0lBQ0EsbUJBQUE7SUFDQSxZQUFBO0lBQ0EsZ0JBQUE7SUFDQSxnQkFBQTtFQVBOO0FBQ0Y7QUFXQSx1Q0FBQSIsInNvdXJjZXNDb250ZW50IjpbIi5hamF5IHtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi9hc3NldHMvL2ltYWdlcy9iYWNrZ3JvdWQuanBnXCIpO1xyXG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBtaW4taGVpZ2h0OiAxMDB2aDtcclxuICAgIC8vIG1pbi13aWR0aDoxMDB2dztcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uaG9tZWJveCB7XHJcbiAgICAvLyBkaXNwbGF5OiBmbGV4O1xyXG4gICAgY29sdW1uczogMjtcclxuICAgIGNvbHVtbi1ydWxlOiA0cHggc29saWQgcmdiKDc5LCAyMjcsIDEyMyk7XHJcbiAgICAvLyBjb2x1bW5zOiAxNWVtO1xyXG4gICAgY29sdW1uLWdhcDogNWVtO1xyXG4gICAgcGFkZGluZzogNSU7XHJcbiAgICBtYXJnaW4tbGVmdDogMjUlO1xyXG59XHJcblxyXG4uaG9tZWJveD4uY29sdW1ucyB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMzYsIDM2LCAzNik7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCByZ2IoNzksIDE4NSwgMjI3KTtcclxuICAgIGJyZWFrLWluc2lkZTogYXZvaWQ7XHJcbiAgICBvcGFjaXR5OiA4MCU7XHJcbn1cclxuXHJcbi5wYXJlbnQge1xyXG4gICAgc2Nyb2xsLXNuYXAtdHlwZTogeSBtYW5kYXRvcnk7XHJcbn1cclxuXHJcbi5wYXJlbnQgPiBjaGlsZCB7XHJcbiAgICBzY3JvbGwtc25hcC1hbGlnbjogdG9wO1xyXG59XHJcblxyXG4vKiAtLS0tTW9iaWxlIG9ubHktLS0tICovXHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjYwMXB4KSB7XHJcblxyXG4gICAgLnRpdGxlIHtcclxuICAgICAgICBmb250LXNpemU6IDN2aDtcclxuICAgIH1cclxuXHJcbiAgICBoMiB7XHJcbiAgICAgICAgZm9udC1zaXplOiAzdmg7XHJcbiAgICB9XHJcblxyXG4gICAgLmhvbWVib3gge1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgICAgICBjb2x1bW4tcnVsZTogMnB4IHNvbGlkIHJnYig3OSwgMjI3LCAxMjMpO1xyXG4gICAgICAgIGNvbHVtbnM6IDVlbTtcclxuICAgICAgICBjb2x1bW4tZ2FwOiAyZW07XHJcbiAgICB9XHJcblxyXG4gICAgLmhvbWVib3g+LmNvbHVtbnMge1xyXG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigzNiwgMzYsIDM2KTtcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCByZ2IoNzksIDE4NSwgMjI3KTtcclxuICAgICAgICBicmVhay1pbnNpZGU6IGF2b2lkO1xyXG4gICAgICAgIG9wYWNpdHk6IDgwJTtcclxuICAgICAgICBpbmxpbmUtc2l6ZTogODAlO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAxMCU7XHJcbiAgICB9XHJcblxyXG59XHJcblxyXG4vKiAtLS0tRU5EIG9mIE1vYmlsZSBvbmx5IHN0eWxpbmctLS0tICovIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.banner[_ngcontent-ng-c3769789142] {
+  margin-top: 3%;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9iYW5uZXIvYmFubmVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksY0FBQTtBQUNKIiwic291cmNlc0NvbnRlbnQiOlsiLmJhbm5lciB7XHJcbiAgICBtYXJnaW4tdG9wOiAzJTtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>body[_ngcontent-ng-c1363083267] {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+
+
+.container[_ngcontent-ng-c1363083267] {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul[_ngcontent-ng-c1363083267] {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1[_ngcontent-ng-c1363083267] {
+  height: 38px;
+  background-color: #3e8ed0;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark[_ngcontent-ng-c1363083267] {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+header[_ngcontent-ng-c1363083267] {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header[_ngcontent-ng-c1363083267]   a[_ngcontent-ng-c1363083267] {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header[_ngcontent-ng-c1363083267]   li[_ngcontent-ng-c1363083267] {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header[_ngcontent-ng-c1363083267]   #branding[_ngcontent-ng-c1363083267] {
+  float: left;
+}
+
+header[_ngcontent-ng-c1363083267]   #branding[_ngcontent-ng-c1363083267]   h1[_ngcontent-ng-c1363083267] {
+  margin: 0;
+}
+
+header[_ngcontent-ng-c1363083267]   nav[_ngcontent-ng-c1363083267] {
+  float: right;
+  margin-top: 10px;
+}
+
+header[_ngcontent-ng-c1363083267]   .highlight[_ngcontent-ng-c1363083267], header[_ngcontent-ng-c1363083267]   .current[_ngcontent-ng-c1363083267]   a[_ngcontent-ng-c1363083267] {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header[_ngcontent-ng-c1363083267]   a[_ngcontent-ng-c1363083267]:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+
+
+#showcase[_ngcontent-ng-c1363083267] {
+  min-height: 400px;
+  
+
+  
+
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase[_ngcontent-ng-c1363083267]   h1[_ngcontent-ng-c1363083267] {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase[_ngcontent-ng-c1363083267]   p[_ngcontent-ng-c1363083267] {
+  font-size: 20px;
+}
+
+
+
+#newsletter[_ngcontent-ng-c1363083267] {
+  padding: 10px;
+  color: #ffffff;
+  background: #35424a;
+  display: flex;
+}
+
+#newsletter[_ngcontent-ng-c1363083267]   h1[_ngcontent-ng-c1363083267], #newsletter[_ngcontent-ng-c1363083267]   h3[_ngcontent-ng-c1363083267] {
+  float: left;
+}
+
+#newsletter[_ngcontent-ng-c1363083267]   form[_ngcontent-ng-c1363083267], .field[_ngcontent-ng-c1363083267], .help[_ngcontent-ng-c1363083267] {
+  float: right;
+}
+
+#newsletter[_ngcontent-ng-c1363083267]   input[type=email][_ngcontent-ng-c1363083267], input[type=text][_ngcontent-ng-c1363083267], .field[_ngcontent-ng-c1363083267], .help[_ngcontent-ng-c1363083267] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+#newsletter[_ngcontent-ng-c1363083267]   button[_ngcontent-ng-c1363083267] {
+  margin-left: 10px;
+  height: 25px;
+}
+
+
+
+#boxes[_ngcontent-ng-c1363083267] {
+  margin-top: 20px;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .box[_ngcontent-ng-c1363083267] {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267] {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .box[_ngcontent-ng-c1363083267]   .audiobox[_ngcontent-ng-c1363083267], #boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267]   .audiobox[_ngcontent-ng-c1363083267] {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .box[_ngcontent-ng-c1363083267]   img[_ngcontent-ng-c1363083267], #boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267]   img[_ngcontent-ng-c1363083267] {
+  width: 90px;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267]   iframe[_ngcontent-ng-c1363083267] {
+  width: 95%;
+}
+
+#boxes[_ngcontent-ng-c1363083267]   .box[_ngcontent-ng-c1363083267]   iframe[_ngcontent-ng-c1363083267], #boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267]   iframe[_ngcontent-ng-c1363083267] {
+  overflow: auto;
+}
+
+
+
+aside#sidebar[_ngcontent-ng-c1363083267] {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar[_ngcontent-ng-c1363083267]   .quote[_ngcontent-ng-c1363083267]   input[_ngcontent-ng-c1363083267], aside#sidebar[_ngcontent-ng-c1363083267]   .quote[_ngcontent-ng-c1363083267]   textarea[_ngcontent-ng-c1363083267] {
+  width: 90%;
+  padding: 5px;
+}
+
+
+
+article#main-col[_ngcontent-ng-c1363083267] {
+  float: left;
+  width: 65%;
+}
+
+
+
+ul#services[_ngcontent-ng-c1363083267]   li[_ngcontent-ng-c1363083267] {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 15px;
+  background: #e6e6e6;
+}
+
+
+
+ul#events[_ngcontent-ng-c1363083267]   li[_ngcontent-ng-c1363083267] {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 15px;
+  background: #e6e6e6;
+}
+
+footer[_ngcontent-ng-c1363083267] {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+.p-title[_ngcontent-ng-c1363083267] {
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+
+
+@media (max-width: 768px) {
+  header[_ngcontent-ng-c1363083267]   #branding[_ngcontent-ng-c1363083267], header[_ngcontent-ng-c1363083267]   nav[_ngcontent-ng-c1363083267], header[_ngcontent-ng-c1363083267]   nav[_ngcontent-ng-c1363083267]   li[_ngcontent-ng-c1363083267], #newsletter[_ngcontent-ng-c1363083267]   h1[_ngcontent-ng-c1363083267], #newsletter[_ngcontent-ng-c1363083267]   form[_ngcontent-ng-c1363083267], #boxes[_ngcontent-ng-c1363083267]   .box[_ngcontent-ng-c1363083267], #boxes[_ngcontent-ng-c1363083267]   .bigbox[_ngcontent-ng-c1363083267], article#main-col[_ngcontent-ng-c1363083267], aside#sidebar[_ngcontent-ng-c1363083267] {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header[_ngcontent-ng-c1363083267] {
+    padding-bottom: 20px;
+  }
+  #showcase[_ngcontent-ng-c1363083267]   h1[_ngcontent-ng-c1363083267] {
+    margin-top: 40px;
+  }
+  #newsletter[_ngcontent-ng-c1363083267]   button[_ngcontent-ng-c1363083267], .quote[_ngcontent-ng-c1363083267]   button[_ngcontent-ng-c1363083267] {
+    display: block;
+    width: 100%;
+  }
+  #newsletter[_ngcontent-ng-c1363083267]   form[_ngcontent-ng-c1363083267]   input[type=email][_ngcontent-ng-c1363083267], form[_ngcontent-ng-c1363083267]   input[type=text][_ngcontent-ng-c1363083267], .quote[_ngcontent-ng-c1363083267]   input[_ngcontent-ng-c1363083267], .quote[_ngcontent-ng-c1363083267]   textarea[_ngcontent-ng-c1363083267] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  generic[_ngcontent-ng-c1363083267] {
+    font-family: verdana;
+    color: blue;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSwyQ0FBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EseUJBQUE7QUFDSjs7QUFFRSxXQUFBO0FBQ0E7RUFDRSxVQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0FBQ0o7O0FBRUU7RUFDRSxTQUFBO0VBQ0EsVUFBQTtBQUNKOztBQUVFO0VBQ0UsWUFBQTtFQUNBLHlCQUFBO0VBQ0EsU0FBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0FBQ0o7O0FBRUU7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtBQUNKOztBQUVFLFlBQUE7QUFDQTtFQUNFLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQ0FBQTtBQUNKOztBQUVFO0VBQ0UsY0FBQTtFQUNBLHFCQUFBO0VBQ0EseUJBQUE7RUFDQSxlQUFBO0FBQ0o7O0FBRUU7RUFDRSxXQUFBO0VBQ0EsZUFBQTtFQUNBLHNCQUFBO0FBQ0o7O0FBRUU7RUFDRSxXQUFBO0FBQ0o7O0FBRUU7RUFDRSxTQUFBO0FBQ0o7O0FBRUU7RUFDRSxZQUFBO0VBQ0EsZ0JBQUE7QUFDSjs7QUFFRTtFQUNFLGNBQUE7RUFDQSxpQkFBQTtBQUNKOztBQUVFO0VBQ0UsY0FBQTtFQUNBLGlCQUFBO0FBQ0o7O0FBRUUsYUFBQTtBQUNBO0VBQ0UsaUJBQUE7RUFDQSxvQ0FBQTtFQUNBLGlGQUFBO0VBRUEsa0JBQUE7RUFDQSxjQUFBO0FBQUo7O0FBR0U7RUFDRSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQUFKOztBQUdFO0VBQ0UsZUFBQTtBQUFKOztBQUdFLGVBQUE7QUFDQTtFQUNFLGFBQUE7RUFDQSxjQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0FBQUo7O0FBR0U7RUFDRSxXQUFBO0FBQUo7O0FBSUU7RUFDRSxZQUFBO0FBREo7O0FBS0U7RUFDRSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQUZKOztBQUtFO0VBQ0UsaUJBQUE7RUFDQSxZQUFBO0FBRko7O0FBS0UsVUFBQTtBQUNBO0VBQ0UsZ0JBQUE7QUFGSjs7QUFLRTtFQUNFLFdBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxhQUFBO0FBRko7O0FBS0U7RUFDRSxXQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7QUFGSjs7QUFLRTtFQUNFLGFBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FBRko7O0FBS0U7RUFDRSxXQUFBO0FBRko7O0FBS0U7RUFDRSxVQUFBO0FBRko7O0FBSUU7RUFDRSxjQUFBO0FBREo7O0FBSUUsWUFBQTtBQUNBO0VBQ0UsWUFBQTtFQUNBLFVBQUE7RUFDQSxnQkFBQTtBQURKOztBQUlFO0VBQ0UsVUFBQTtFQUNBLFlBQUE7QUFESjs7QUFJRSxhQUFBO0FBQ0E7RUFDRSxXQUFBO0VBQ0EsVUFBQTtBQURKOztBQUlFLGFBQUE7QUFDQTtFQUNFLGdCQUFBO0VBQ0EsYUFBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtBQURKOztBQUdFLFdBQUE7QUFDQTtFQUNFLGdCQUFBO0VBQ0EsYUFBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtBQUFKOztBQUdFO0VBQ0UsYUFBQTtFQUNBLGdCQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7QUFBSjs7QUFHRTtFQUNFLGlCQUFBO0VBQ0EsdUJBQUE7RUFDQSxxQkFBQTtBQUFKOztBQUdFLGtCQUFBO0FBQ0E7RUFDRTs7Ozs7Ozs7O0lBU0UsV0FBQTtJQUNBLGtCQUFBO0lBQ0EsV0FBQTtFQUFKO0VBR0U7SUFDRSxvQkFBQTtFQURKO0VBSUU7SUFDRSxnQkFBQTtFQUZKO0VBS0U7SUFDRSxjQUFBO0lBQ0EsV0FBQTtFQUhKO0VBTUU7SUFDRSxXQUFBO0lBQ0Esa0JBQUE7RUFKSjtFQU9FO0lBQ0Usb0JBQUE7SUFDQSxXQUFBO0lBQ0EsaUJBQUE7RUFMSjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiYm9keXtcclxuICAgIGZvbnQ6IDE1cHgvMS41IEFyaWFsLCBIZWx2ZXRpY2Esc2Fucy1zZXJpZjtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIG1hcmdpbjowO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZjRmNGY0O1xyXG4gIH1cclxuICBcclxuICAvKiBHbG9iYWwgKi9cclxuICAuY29udGFpbmVye1xyXG4gICAgd2lkdGg6OTAlO1xyXG4gICAgbWFyZ2luOmF1dG87XHJcbiAgICBvdmVyZmxvdzpoaWRkZW47XHJcbiAgfVxyXG4gIFxyXG4gIHVse1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICBwYWRkaW5nOjA7XHJcbiAgfVxyXG4gIFxyXG4gIC5idXR0b25fMXtcclxuICAgIGhlaWdodDozOHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzNlOGVkMDtcclxuICAgIGJvcmRlcjowO1xyXG4gICAgcGFkZGluZy1sZWZ0OiAyMHB4O1xyXG4gICAgcGFkZGluZy1yaWdodDoyMHB4O1xyXG4gICAgY29sb3I6I2ZmZmZmZjtcclxuICB9XHJcbiAgXHJcbiAgLmRhcmt7XHJcbiAgICBwYWRkaW5nOjE1cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiMzNTQyNGE7XHJcbiAgICBjb2xvcjojZmZmZmZmO1xyXG4gICAgbWFyZ2luLXRvcDoxMHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbToxMHB4O1xyXG4gIH1cclxuICBcclxuICAvKiBIZWFkZXIgKiovXHJcbiAgaGVhZGVye1xyXG4gICAgYmFja2dyb3VuZDojMzU0MjRhO1xyXG4gICAgY29sb3I6I2ZmZmZmZjtcclxuICAgIHBhZGRpbmctdG9wOjMwcHg7XHJcbiAgICBtaW4taGVpZ2h0OjcwcHg7XHJcbiAgICBib3JkZXItYm90dG9tOiNlODQ5MWQgM3B4IHNvbGlkO1xyXG4gIH1cclxuICBcclxuICBoZWFkZXIgYXtcclxuICAgIGNvbG9yOiNmZmZmZmY7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246bm9uZTtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgICBmb250LXNpemU6MTZweDtcclxuICB9XHJcbiAgXHJcbiAgaGVhZGVyIGxpe1xyXG4gICAgZmxvYXQ6bGVmdDtcclxuICAgIGRpc3BsYXk6aW5saW5lO1xyXG4gICAgcGFkZGluZzogMCAyMHB4IDAgMjBweDtcclxuICB9XHJcbiAgXHJcbiAgaGVhZGVyICNicmFuZGluZ3tcclxuICAgIGZsb2F0OmxlZnQ7XHJcbiAgfVxyXG4gIFxyXG4gIGhlYWRlciAjYnJhbmRpbmcgaDF7XHJcbiAgICBtYXJnaW46MDtcclxuICB9XHJcbiAgXHJcbiAgaGVhZGVyIG5hdntcclxuICAgIGZsb2F0OnJpZ2h0O1xyXG4gICAgbWFyZ2luLXRvcDoxMHB4O1xyXG4gIH1cclxuICBcclxuICBoZWFkZXIgLmhpZ2hsaWdodCwgaGVhZGVyIC5jdXJyZW50IGF7XHJcbiAgICBjb2xvcjojZTg0OTFkO1xyXG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcclxuICB9XHJcbiAgXHJcbiAgaGVhZGVyIGE6aG92ZXJ7XHJcbiAgICBjb2xvcjojY2NjY2NjO1xyXG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcclxuICB9XHJcbiAgXHJcbiAgLyogU2hvd2Nhc2UgKi9cclxuICAjc2hvd2Nhc2V7XHJcbiAgICBtaW4taGVpZ2h0OjQwMHB4O1xyXG4gICAgLyogYmFja2dyb3VuZDogbm8tcmVwZWF0IDAgLTQwMHB4OyAqL1xyXG4gICAgLyogYmFja2dyb3VuZDp1cmwoJy4uL2ltZy9iYWNrZ3JvdW5kL0NodXJjaF9PZl9DaHJpc3QuanBnJykgbm8tcmVwZWF0IDAgLTQwMHB4OyAqL1xyXG4gICAgLy8gYmFja2dyb3VuZDp1cmwoJy4uL2ltZy9iYWNrZ3JvdW5kL2JnLWltZy0wMTMuUE5HJykgbm8tcmVwZWF0IDAgLTQwMHB4O1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbiAgICBjb2xvcjojZmZmZmZmO1xyXG4gIH1cclxuICBcclxuICAjc2hvd2Nhc2UgaDF7XHJcbiAgICBtYXJnaW4tdG9wOjEwMHB4O1xyXG4gICAgZm9udC1zaXplOjU1cHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOjEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICNzaG93Y2FzZSBwe1xyXG4gICAgZm9udC1zaXplOjIwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC8qIE5ld3NsZXR0ZXIgKi9cclxuICAjbmV3c2xldHRlcntcclxuICAgIHBhZGRpbmc6MTBweDtcclxuICAgIGNvbG9yOiNmZmZmZmY7XHJcbiAgICBiYWNrZ3JvdW5kOiMzNTQyNGE7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICBcclxuICAjbmV3c2xldHRlciBoMSwgI25ld3NsZXR0ZXIgaDN7XHJcbiAgICBmbG9hdDpsZWZ0O1xyXG4gICAgLy8gbWFyZ2luLXRvcDoxMHB4O1xyXG4gIH1cclxuICBcclxuICAjbmV3c2xldHRlciBmb3JtLCAuZmllbGQsIC5oZWxwIHtcclxuICAgIGZsb2F0OnJpZ2h0O1xyXG4gICAgLy8gbWFyZ2luLXRvcDoxNXB4O1xyXG4gIH1cclxuICBcclxuICAjbmV3c2xldHRlciBpbnB1dFt0eXBlPVwiZW1haWxcIl0sIGlucHV0W3R5cGU9XCJ0ZXh0XCJdLCAuZmllbGQsIC5oZWxwe1xyXG4gICAgcGFkZGluZzo0cHg7XHJcbiAgICBoZWlnaHQ6MjVweDtcclxuICAgIHdpZHRoOjI1MHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbiAgfVxyXG5cclxuICAjbmV3c2xldHRlciBidXR0b24ge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbiAgICBoZWlnaHQ6MjVweDtcclxuICB9XHJcbiAgXHJcbiAgLyogQm94ZXMgKi9cclxuICAjYm94ZXN7XHJcbiAgICBtYXJnaW4tdG9wOjIwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICNib3hlcyAuYm94e1xyXG4gICAgZmxvYXQ6bGVmdDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHdpZHRoOjMwJTtcclxuICAgIHBhZGRpbmc6MTBweDtcclxuICB9XHJcbiAgXHJcbiAgI2JveGVzIC5iaWdib3h7XHJcbiAgICBmbG9hdDpsZWZ0O1xyXG4gICAgd2lkdGg6NDAlO1xyXG4gICAgcGFkZGluZzoxMHB4O1xyXG4gIH1cclxuICBcclxuICAjYm94ZXMgLmJveCAuYXVkaW9ib3gsICNib3hlcyAuYmlnYm94IC5hdWRpb2JveCB7IFxyXG4gICAgaGVpZ2h0OiAzMDBweDtcclxuICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcclxuICAgIG92ZXJmbG93LXg6aGlkZGVuO1xyXG4gIH1cclxuICBcclxuICAjYm94ZXMgLmJveCBpbWcsICNib3hlcyAuYmlnYm94IGltZ3tcclxuICAgIHdpZHRoOjkwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICNib3hlcyAuYmlnYm94IGlmcmFtZSB7XHJcbiAgICB3aWR0aDo5NSU7XHJcbiAgfVxyXG4gICNib3hlcyAuYm94IGlmcmFtZSwgI2JveGVzIC5iaWdib3ggaWZyYW1le1xyXG4gICAgb3ZlcmZsb3c6IGF1dG87XHJcbiAgfVxyXG4gIFxyXG4gIC8qIFNpZGViYXIgKi9cclxuICBhc2lkZSNzaWRlYmFye1xyXG4gICAgZmxvYXQ6cmlnaHQ7XHJcbiAgICB3aWR0aDozMCU7XHJcbiAgICBtYXJnaW4tdG9wOjEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIGFzaWRlI3NpZGViYXIgLnF1b3RlIGlucHV0LCBhc2lkZSNzaWRlYmFyIC5xdW90ZSB0ZXh0YXJlYXtcclxuICAgIHdpZHRoOjkwJTtcclxuICAgIHBhZGRpbmc6NXB4O1xyXG4gIH1cclxuICBcclxuICAvKiBNYWluLWNvbCAqL1xyXG4gIGFydGljbGUjbWFpbi1jb2x7XHJcbiAgICBmbG9hdDpsZWZ0O1xyXG4gICAgd2lkdGg6NjUlO1xyXG4gIH1cclxuICBcclxuICAvKiBTZXJ2aWNlcyAqL1xyXG4gIHVsI3NlcnZpY2VzIGxpe1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6MjBweDtcclxuICAgIGJvcmRlcjogI2NjY2NjYyBzb2xpZCAxcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOjE1cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiNlNmU2ZTY7XHJcbiAgfVxyXG4gIC8qIEV2ZW50cyAqL1xyXG4gIHVsI2V2ZW50cyBsaXtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBwYWRkaW5nOjIwcHg7XHJcbiAgICBib3JkZXI6ICNjY2NjY2Mgc29saWQgMXB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbToxNXB4O1xyXG4gICAgYmFja2dyb3VuZDojZTZlNmU2O1xyXG4gIH1cclxuICBcclxuICBmb290ZXJ7XHJcbiAgICBwYWRkaW5nOjIwcHg7XHJcbiAgICBtYXJnaW4tdG9wOjIwcHg7XHJcbiAgICBjb2xvcjojZmZmZmZmO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZTg0OTFkO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuXHJcbiAgLnAtdGl0bGUge1xyXG4gICAgZm9udC1zaXplOiAxLjE3ZW07XHJcbiAgICBtYXJnaW4tYmxvY2stc3RhcnQ6IDFlbTtcclxuICAgIG1hcmdpbi1ibG9jay1lbmQ6IDFlbTtcclxuICB9XHJcblxyXG4gIC8qIE1lZGlhIFF1ZXJpZXMgKi9cclxuICBAbWVkaWEobWF4LXdpZHRoOiA3NjhweCl7XHJcbiAgICBoZWFkZXIgI2JyYW5kaW5nLFxyXG4gICAgaGVhZGVyIG5hdixcclxuICAgIGhlYWRlciBuYXYgbGksXHJcbiAgICAjbmV3c2xldHRlciBoMSxcclxuICAgICNuZXdzbGV0dGVyIGZvcm0sXHJcbiAgICAjYm94ZXMgLmJveCxcclxuICAgICNib3hlcyAuYmlnYm94LFxyXG4gICAgYXJ0aWNsZSNtYWluLWNvbCxcclxuICAgIGFzaWRlI3NpZGViYXJ7XHJcbiAgICAgIGZsb2F0Om5vbmU7XHJcbiAgICAgIHRleHQtYWxpZ246Y2VudGVyO1xyXG4gICAgICB3aWR0aDoxMDAlO1xyXG4gICAgfVxyXG4gIFxyXG4gICAgaGVhZGVye1xyXG4gICAgICBwYWRkaW5nLWJvdHRvbToyMHB4O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgI3Nob3djYXNlIGgxe1xyXG4gICAgICBtYXJnaW4tdG9wOjQwcHg7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAjbmV3c2xldHRlciBidXR0b24sIC5xdW90ZSBidXR0b257XHJcbiAgICAgIGRpc3BsYXk6YmxvY2s7XHJcbiAgICAgIHdpZHRoOjEwMCU7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAjbmV3c2xldHRlciBmb3JtIGlucHV0W3R5cGU9XCJlbWFpbFwiXSwgZm9ybSBpbnB1dFt0eXBlPVwidGV4dFwiXSwgLnF1b3RlIGlucHV0LCAucXVvdGUgdGV4dGFyZWF7XHJcbiAgICAgIHdpZHRoOjEwMCU7XHJcbiAgICAgIG1hcmdpbi1ib3R0b206NXB4O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgZ2VuZXJpYyB7XHJcbiAgICAgIGZvbnQtZmFtaWx5OnZlcmRhbmE7XHJcbiAgICAgIGNvbG9yOmJsdWU7XHJcbiAgICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgXHJcbiAgICB9XHJcbiAgXHJcbiAgfVxyXG4gICJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.footer[_ngcontent-ng-c2693663495] {
+  background-image: url("/assets//images/wood-horizontal-bg.jpg");
+  background-size: cover;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLCtEQUFBO0VBR0Esc0JBQUE7QUFESiIsInNvdXJjZXNDb250ZW50IjpbIi5mb290ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvYXNzZXRzLy9pbWFnZXMvd29vZC1ob3Jpem9udGFsLWJnLmpwZ1wiKTsgXHJcbiAgICAvLyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7IFxyXG4gICAgLy8gYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgXHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyOyBcclxuICAgIC8vIG9wYWNpdHk6IDgwJTtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+<body>
+  <app-root _nghost-ng-c750168442="" ng-version="16.2.6"><app-header _ngcontent-ng-c750168442="" _nghost-ng-c657013583=""><nav _ngcontent-ng-c657013583="" class="navbar is-dark is-fixed-top"><div _ngcontent-ng-c657013583="" class="navbar-header navbar-brand"><a _ngcontent-ng-c657013583="" class="navbar-item"><img _ngcontent-ng-c657013583="" src="./ChurchWebsite_files/PerfectLogo2.png"></a><a _ngcontent-ng-c657013583="" role="button" data-target="navMenu" aria-label="menu" aria-expanded="false" class="navbar-burger"><span _ngcontent-ng-c657013583="" aria-hidden="true"></span><span _ngcontent-ng-c657013583="" aria-hidden="true"></span><span _ngcontent-ng-c657013583="" aria-hidden="true"></span></a></div><div _ngcontent-ng-c657013583="" id="navMenu" class="navbar-menu"><div _ngcontent-ng-c657013583="" class="navbar-start"><a _ngcontent-ng-c657013583="" class="navbar-item">Home</a><a _ngcontent-ng-c657013583="" class="navbar-item">About</a><a _ngcontent-ng-c657013583="" routerlink="/contact" class="navbar-item" ng-reflect-router-link="/contact" href="http://localhost:4200/contact">Contact</a><div _ngcontent-ng-c657013583="" class="navbar-item has-dropdown is-hoverable"><a _ngcontent-ng-c657013583="" class="navbar-link">More</a><div _ngcontent-ng-c657013583="" class="navbar-dropdown"><a _ngcontent-ng-c657013583="" class="navbar-item">Documentation</a><a _ngcontent-ng-c657013583="" class="navbar-item">Events</a><a _ngcontent-ng-c657013583="" class="navbar-item">Documentation</a><hr _ngcontent-ng-c657013583="" class="navbar-divider"><a _ngcontent-ng-c657013583="" class="navbar-item">Report an issue</a></div></div></div><div _ngcontent-ng-c657013583="" class="navbar-end"><div _ngcontent-ng-c657013583="" class="navbar-item"><div _ngcontent-ng-c657013583="" class="buttons"><a _ngcontent-ng-c657013583="" class="button is-info"><strong _ngcontent-ng-c657013583="">Request Prayer</strong></a><a _ngcontent-ng-c657013583="" class="button is-light"> Need Assistance? </a></div></div></div></div></nav></app-header><router-outlet _ngcontent-ng-c750168442=""></router-outlet><app-home _nghost-ng-c70768716=""><div _ngcontent-ng-c70768716="" class="banner app-banner"><app-banner _ngcontent-ng-c70768716="" _nghost-ng-c3769789142=""><section _ngcontent-ng-c3769789142="" class="hero is-small is-light banner"><p _ngcontent-ng-c3769789142="" class="hero sub-title">Welcome to the</p><p _ngcontent-ng-c3769789142="">Welcome to Church of Chrits that meets at Kharmanghat Telangana, India!</p></section></app-banner></div><div _ngcontent-ng-c70768716="" class="parent"><div _ngcontent-ng-c70768716="" class="child"><section _ngcontent-ng-c70768716="" id="homepageid" class="hero is-primary ajay"><div _ngcontent-ng-c70768716="" class="hero-body"><div _ngcontent-ng-c70768716="" class="container"><div _ngcontent-ng-c70768716="" class="hero is-dark has-text-centered"><p _ngcontent-ng-c70768716="" class="title"> For God so loved the world that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life. <sub _ngcontent-ng-c70768716="">John 3: 16</sub></p></div><div _ngcontent-ng-c70768716="" class="homebox level-item"><div _ngcontent-ng-c70768716="" class="columns is-mobile has-text-centered"><h2 _ngcontent-ng-c70768716=""><strong _ngcontent-ng-c70768716="">Greetings!!</strong></h2><h5 _ngcontent-ng-c70768716="">Welcome to Church of Christ.</h5></div><div _ngcontent-ng-c70768716="" class="columns is-mobile is-one-quarter has-text-centered"><h2 _ngcontent-ng-c70768716=""><strong _ngcontent-ng-c70768716=""><u _ngcontent-ng-c70768716="">Worship Services</u></strong></h2><ul _ngcontent-ng-c70768716=""><strong _ngcontent-ng-c70768716="">Sunday</strong><li _ngcontent-ng-c70768716="">Bible Study: 9:30 am</li><li _ngcontent-ng-c70768716="">Sunday's School: 9:30 am</li><li _ngcontent-ng-c70768716="">Worship Service: 10:30 am</li><li _ngcontent-ng-c70768716="">Evening Service: 7:00 pm</li><strong _ngcontent-ng-c70768716="">Wednesday</strong><li _ngcontent-ng-c70768716="">Bible Study: 7:00 pm</li><strong _ngcontent-ng-c70768716="">Friday</strong><li _ngcontent-ng-c70768716="">Women's Prayer Meeting: 12:00 pm</li></ul></div></div></div></div></section></div><div _ngcontent-ng-c70768716="" class="child"><app-about _ngcontent-ng-c70768716="" _nghost-ng-c1363083267=""><section _ngcontent-ng-c1363083267="" id="aboutpageid" class="hero is-small is-info"><div _ngcontent-ng-c1363083267="" class="hero-body"></div><div _ngcontent-ng-c1363083267="" class="container"><h1 _ngcontent-ng-c1363083267="" class="title has-text-centered">About Us!</h1></div></section><section _ngcontent-ng-c1363083267="" id="newsletter"><div _ngcontent-ng-c1363083267="" class="container Subscribe"><h1 _ngcontent-ng-c1363083267="">Subscribe To Our Newsletter</h1><form _ngcontent-ng-c1363083267="" novalidate="" id="myForm" action="http://localhost:4200/#" class="ng-untouched ng-pristine ng-invalid"><input _ngcontent-ng-c1363083267="" type="text" id="name" name="name" placeholder="Enter Name" required="" class="input ng-untouched ng-pristine ng-invalid" ng-reflect-required="" ng-reflect-name="name" ng-reflect-model=""><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><input _ngcontent-ng-c1363083267="" type="email" id="email" placeholder="Enter Email..." name="email" required="" class="input ng-untouched ng-pristine ng-invalid" ng-reflect-required="" ng-reflect-name="email" ng-reflect-model=""><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><button _ngcontent-ng-c1363083267="" type="submit" class="button is-small is-warning" disabled=""> Subscribe </button></form></div></section><section _ngcontent-ng-c1363083267="" id="main"><div _ngcontent-ng-c1363083267="" class="container"><article _ngcontent-ng-c1363083267="" id="main-col"><p _ngcontent-ng-c1363083267="" class="p-title"><strong _ngcontent-ng-c1363083267="">About Us &amp; Our Belief: </strong></p><p _ngcontent-ng-c1363083267=""> Our beliefs ... how does one confine a statement of belief that involves so much (the whole Bible) and means so much to us (more than our own lives) to a brief, concise, yet attractively informative statement on a Web page? That is my task here and I beg your forgiveness for the clumsiness of the effort to reduce such grand, vast and eternal truths to a few words. </p><p _ngcontent-ng-c1363083267="" class="p-title"><strong _ngcontent-ng-c1363083267="">Concerning God: </strong></p><p _ngcontent-ng-c1363083267="" class="dark"> We believe, first of all that God is. Again, how does one stop there when such a weighty, awe-inspiring statement demands so much more? But for brevity's sake we must push on. We believe that those who diligently seek Him are rewarded by Him in ways incomprehensible, with joy inexpressible and with peace that passes understanding. Believing that the God who presents Himself to us in the Bible is the only true God, we devote ourselves to Him heart, body and soul. He is our life. We believe that to honor Him we must serve the needs of our fellow man with the same diligence and passion with which He does. We believe that He gave His only begotten Son that we might live; His Son died on the cross that our penalty might be paid; He extended mercy and grace at great sacrifice to Himself. We can and will do no less. </p><p _ngcontent-ng-c1363083267="" class="p-title"><strong _ngcontent-ng-c1363083267="">Concerning Our Worship: </strong></p><p _ngcontent-ng-c1363083267="" class="dark"> To honor Him we not only strive to offer Him our whole-life service every day of our lives, we offer Him our heart-felt worship. In accordance with His will, each first day of the week we humbly and obediently assemble with fellow believers to sing praises to His name as well as sing songs, hymns and spiritual songs to edify one another. In our worship we offer Him our prayers of petition, thanksgiving and supplication asking that He bless us with wisdom to use for His glory all that He gives us. While gathered, we assemble around a table of fellowship with our Lord and one another remembering, as He taught us, His death until He comes. In our assemblies we give attention to the reading and teaching of His word that our lives might be strengthened spiritually and that our spirits might be emboldened to carry out our God-given commission to go into all the world teaching the good news of salvation and making disciples of those who believe. Also upon the first day of the week, in order to support the works of His kingdom locally and throughout the world, we give back to Him in a financial way as He has prospered us. We find our instructions for these efforts to honor Him in the New Testament and will gladly show them to any who are interested in the same. </p><p _ngcontent-ng-c1363083267="" class="p-title"><strong _ngcontent-ng-c1363083267="">Concerning Salvation: </strong></p><p _ngcontent-ng-c1363083267="" class="dark"> As to doctrine, we have no creed but Christ. We believe that the Holy Bible is just that, holy; it is inspired (from the very breath) of God. While we have bothers and sisters of like precious faith throughout the world we are not connected to any earthly religious body or headquarters and only submit to the rule of Heaven itself. To become a part of that body of believers, according to God's word one must come to know and trust the grace of the God of heaven by hearing the word of Christ (Romans 10:17). Having come to a faith-filled knowledge of Him and of His Son we know we cannot be in His eternal fellowship unless we are willing to turn from and put to death any passion for sin and choose rather to be His disciple (Luke 13:3; Romans 6:10). Because Jesus is the Son of God and because God has made Him King of kings and Lord of lords, we willingly and passionately confess His name (Matthew 10:32-33, Romans 10:10) and submit to the washing away of the guilt of all past sins in the blood of Christ through the God-given medium of baptism in water (Acts 2:38, 22:16). We strive to walk with Him in light, looking to Him for guidance, and asking for His forgiveness for our failures, which He mercifully and willingly gives (1 John 1:5-9). </p><br _ngcontent-ng-c1363083267=""></article><aside _ngcontent-ng-c1363083267="" id="sidebar"><p _ngcontent-ng-c1363083267="" class="p-title has-text-centered"><strong _ngcontent-ng-c1363083267="">What We Do</strong></p><div _ngcontent-ng-c1363083267="" class="dark"><p _ngcontent-ng-c1363083267="">Matthew 28:19 "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, 20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age." These are Matthew's last recorded words of Jesus. We often focus on verse 19 where He speaks of baptizing those who are made disciples. But there is more here than just baptizing those who believe, though that is certainly important. The mission we have received from the Lord Himself also includes teaching the baptized believers all things that Jesus had taught or commanded the apostles. Wow! What a mission! Submitting to His Lordship, we at the Church of Christ karmanghat, Hyderabad, hope to help people come to know our Lord. We want people to understand that the Son of God has come into the world to pay our sin debt and to show us the way to heaven. Our Christianity cannot simply be a ritualistic baptism and a few church services. Our Christianity must be a way of life that demonstrates the way of life that Jesus teaches us. So, it is our mission to show people how to belong to Christ and how to live with Christ living in us. We want people to know how to show mercy, how to forgive, how to be longsuffering, how to extend grace, how to be humble, how to have courage in the face of opposition, how to pray, how to live each day seeking to glorify God. Our mission, be it at home or abroad is to make disciples and to teach them to observe all things He has commanded us, and we do it with the sure knowledge that He is with us until the end.</p></div></aside></div></section></app-about></div><div _ngcontent-ng-c70768716="" class="child"><app-contact _ngcontent-ng-c70768716="" _nghost-ng-c1095291799=""><section _ngcontent-ng-c1095291799="" id="contactpageid" class="hero is-info is-small"><div _ngcontent-ng-c1095291799="" class="hero-body"></div><div _ngcontent-ng-c1095291799="" class="container"><h1 _ngcontent-ng-c1095291799="" class="title">Contact Us!</h1></div></section><section _ngcontent-ng-c1095291799="" class="section"><div _ngcontent-ng-c1095291799="" class="container"><form _ngcontent-ng-c1095291799="" novalidate="" class="ng-untouched ng-pristine ng-invalid"><div _ngcontent-ng-c1095291799="" class="field"><label _ngcontent-ng-c1095291799="" class="label">Name</label><input _ngcontent-ng-c1095291799="" type="text" name="name" required="" class="input ng-untouched ng-pristine ng-invalid" ng-reflect-required="" ng-reflect-name="name" ng-reflect-model=""><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><div _ngcontent-ng-c1095291799="" class="field"><label _ngcontent-ng-c1095291799="" class="label">Email</label><input _ngcontent-ng-c1095291799="" type="email" name="email" required="" class="input ng-untouched ng-pristine ng-invalid" ng-reflect-required="" ng-reflect-name="email" ng-reflect-model=""><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><div _ngcontent-ng-c1095291799="" class="field"><label _ngcontent-ng-c1095291799="" class="label">Your Message</label><textarea _ngcontent-ng-c1095291799="" name="message" class="textarea ng-untouched ng-pristine ng-valid" ng-reflect-name="message" ng-reflect-model=""></textarea></div><button _ngcontent-ng-c1095291799="" type="submit" class="button is-large is-warning" disabled=""> Send! </button></form></div></section></app-contact></div><div _ngcontent-ng-c70768716="" class="child"><app-footer _ngcontent-ng-c70768716="" _nghost-ng-c2693663495=""><footer _ngcontent-ng-c2693663495="" class="footer hero is-small is-primary"><div _ngcontent-ng-c2693663495="" class="content is-small has-text-centered"><h2 _ngcontent-ng-c2693663495="">Church of Christ, karmanghat, Hyderabad. Copyright © 2024</h2><p _ngcontent-ng-c2693663495="">Thank you for checking us online. Looking forward to seeing you in person.</p></div></footer></app-footer></div></div></app-home><!--container--></app-root>
+<script src="./ChurchWebsite_files/runtime.js.download" type="module"></script><script src="./ChurchWebsite_files/polyfills.js.download" type="module"></script><script src="./ChurchWebsite_files/styles.js.download" defer=""></script><script src="./ChurchWebsite_files/vendor.js.download" type="module"></script><script src="./ChurchWebsite_files/main.js.download" type="module"></script>
+
+</body></html>

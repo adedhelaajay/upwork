@@ -1,0 +1,46 @@
+<nav class="navbar is-dark is-fixed-top">
+    <div class="navbar-header navbar-brand">
+        <a class="navbar-item">
+            <img src="assets/images/logo/PerfectLogo2.png">
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+            <a [routerLink]="" (click)="goToHomePage()" class=navbar-item>Home</a>
+            <a [routerLink]="" (click)="goToAboutPage()" class=navbar-item >About</a>
+            <!-- <a class=navbar-item routerLink="/">Home</a> -->
+            <!-- <a class= navbar-item routerLink="/contact">About</a> -->
+            <a class=navbar-item routerLink="/contact">Contact</a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">More</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">Our Preacher</a>
+              <a [routerLink]="" (click)="goToHomePage()" class="navbar-item">Our Preacher</a>
+              <a class="navbar-item">Events</a>
+              <a class="navbar-item">Documentation</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">Report an issue</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info">
+                <strong>Request Prayer</strong>
+              </a>
+              <a class="button is-light">
+                Need Assistance?
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+</nav>
