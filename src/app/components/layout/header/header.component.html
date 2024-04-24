@@ -1,0 +1,70 @@
+<!-- header start -->
+<header class="header-fixd white-header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" routerLinkActive="active" routerLink="/"><img src="assets/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+            </button>
+            <div class="collapse navbar-collapse sortable" id="navbarSupportedContent">
+                <ul class="custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" href="#about-us" (click)="goToAboutPage()">About
+                            Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active"  (click)="goToGettingsPage()">Gettings & Worship Services</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" href="#contact-us"
+                            (click)="goToContactPage()">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                            <li class="services-dropdown-links">
+                                <a class="nav-link" href="#">
+                                    <h3>Our Preacher</h3>
+                                </a>
+                            </li>
+                            <li class="services-dropdown-links">
+                                <a class="nav-link" href="#">
+                                    <h3>Events</h3>
+                                </a>
+                            </li>
+                            <li class="services-dropdown-links">
+                                <a class="nav-link" href="#">
+                                    <h3>Documentation</h3>
+                                </a>
+                            </li>
+
+                            <li class="services-dropdown-links">
+                                <a class="nav-link" href="#">
+                                    <h3>Report an issue</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link custom-btn" routerLinkActive="active" (click)="goToGettingsPage()">
+                            Request Prayer</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link custom-btn" routerLinkActive="active" href="#">
+                            Need Assistance?</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<!-- header end -->

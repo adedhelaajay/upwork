@@ -1,0 +1,325 @@
+<!-- Home Section Start -->
+<p id="home" style="padding-top: 65px;"></p>
+<span class="bi bi-arrow-right-circle" id="show_leftNav" (click)="showtoggle()" title="Show Left Nav"></span>
+<section class="left-nav active">
+    <span class="bi bi-x-circle" id="close-sidenav" (click)="toggle()"></span>
+    <ul class="custom-nav" style="flex-direction: column;gap: 12px;">
+        <li class="services-dropdown-links">
+            <a class="nav-link" href="#our_preacher">
+                Our Preacher
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="home-section-outer homeSecond-outer homeSecond-third">
+    <div class="container">
+        <div class="banner-row mb-3">
+            <div class="banner-content">
+                <h1>Church Of Christ</h1>
+                <p>For God so loved the world that He gave His only begotten Son, that whosoever believeth in Him
+                    should not perish, but have everlasting life.
+                </p>
+                <p><span>John 3:16</span></p>
+            </div>
+            <div class="col-md-4 ms-auto">
+                <div class="timimg-col col-outer">
+                    <h2>Worship Services</h2>
+                    <span>Sunday</span>
+                    <ul>
+                        <li>Bible Study: 9:30 AM</li>
+                        <li>Sunday's School: 9:30 AM</li>
+                        <li>Worship Service: 10:30 AM</li>
+                        <li>Evening Service: 7:00 PM</li>
+                    </ul>
+                    <span>Wednesday</span>
+                    <ul>
+                        <li>Bible Study: 7:00 PM</li>
+                    </ul>
+                    <span>Friday</span>
+                    <ul>
+                        <li>Women's Prayer Meeting: 12:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="requestPray"></span>
+</section>
+<!-- Home Section End -->
+
+<!-- newsletter section -->
+<section class="newsletter-section-outer about-section-outer">
+    <div class="container">
+        <div class="news-form-outer">
+            <div class="section-heading">
+                <h2 class="m-0">Request Prayer</h2>
+            </div>
+            <form class="newsletter-form" [formGroup]="contactForm" (ngSubmit)="submit(contactForm)">
+                <div class="form-col">
+                    <input type="text" placeholder="Full Name" formControlName="fname" class="form-control">
+                </div>
+                <div class="form-col">
+                    <input type="mail" placeholder="Your E-Mail" formControlName="email" class="form-control">
+                    <span *ngIf="contactForm.hasError('email', 'email')" class="error-show">
+                        Please enter the correct email.
+                    </span>
+                </div>
+                <div class="form-col">
+                    <input type="mail" placeholder="Message" formControlName="message" class="form-control">
+                    <!-- <textarea formControlName="message" class="form-control" placeholder="Message"> </textarea> -->
+                </div>
+                <div class="form-col mb-0">
+                    <button type="submit" class="custom-btn contact-button" data-bs-toggle="modal"
+                        data-bs-target="#successmodal">
+                        <!-- <span><i class="bi bi-arrow-right"></i></span> -->
+                        Submit</button>
+                </div>
+                <div *ngIf="showdiv"
+                    class="alert alert-success d-flex align-items-center w-100 m-0 justify-content-center" role="alert">
+                    Your message is successfully Sent.
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Greetings Section start-->
+<section id="our_preacher" class="greeting-section-outer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 greeting-col col-outer">
+                <h2>Greetings</h2>
+                <span>Our Preacher</span><br>
+                <span>Krupadanam Adedhela <sub>Minister</sub></span>
+                <p>Krupadanam was born in Hyderabad worked in the Agriculture department, holding doctorate degree in
+                    Divinity of Arts, Retired as , His parents were AP Israel and (), being raised in a denominational
+                    background including Methodist and Baptist. Krupadanam is married to Anna Christina Pulagala and
+                    blessed with four children</p>
+                <p>In 1978 he obeyed the gosple, left Methodist and was added to the Lord's Church. He was taught by Br.
+                    Prakasam, his uncle and is being an evangelist before taking up full time ministry, latter
+                    constructed a church-facility to further the kingdom of God.</p>
+            </div>
+            <div class="col-md-5 greeting-col col-outer carousel-img">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/img/001.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/002.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/003.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/004.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Greetings Section end -->
+
+<section class="about-section-outer" id="about-us">
+    <div class="container">
+        <div class="section-heading">
+            <h2>About Us & Our Belief</h2>
+            <p>Our beliefs ... how does one confine a statement of belief that involves so much (the whole Bible) and
+                means so much to us (more than our own lives) to a brief, concise, yet attractively informative
+                statement on a Web page? That is my task here and I beg your forgiveness for the clumsiness of the
+                effort to reduce such grand, vast and eternal truths to a few words.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section End-->
+<section class="greeting-section-outer">
+    <div class="container">
+        <div class="about-row-outer">
+            <div class="col-outer">
+                <h2 class="mb-3">Concerning God</h2>
+                <p>We believe, first of all that God is. Again, how does one stop there when such a weighty,
+                    awe-inspiring statement demands so much more? But for brevity's sake we must push on. We believe
+                    that those who diligently seek Him are rewarded by Him in ways incomprehensible, with joy
+                    inexpressible and with peace that passes understanding.</p>
+                <p>Believing that the God who presents Himself
+                    to us in the Bible is the only true God, we devote ourselves to Him heart, body and soul. He is our
+                    life. We believe that to honor Him we must serve the needs of our fellow man with the same diligence
+                    and passion with which He does. We believe that He gave His only begotten Son that we might live;
+                    His Son died on the cross that our penalty might be paid; He extended mercy and grace at great
+                    sacrifice to Himself. We can and will do no less.
+                </p>
+            </div>
+            <div class="col-outer">
+                <h2 class="mb-3">Concerning Our Worship</h2>
+                <p>To honor Him we not only strive to offer Him our whole-life service every day of our lives, we offer
+                    Him our heart-felt worship. In accordance with His will, each first day of the week we humbly and
+                    obediently assemble with fellow believers to sing praises to His name as well as sing songs, hymns
+                    and spiritual songs to edify one another. In our worship we offer Him our prayers of petition,
+                    thanksgiving and supplication asking that He bless us with wisdom to use for His glory all that He
+                    gives us. While gathered, we assemble around a table of fellowship with our Lord and one another
+                    remembering, as He taught us, His death until He comes.</p>
+                <p>In our assemblies we give attention to the
+                    reading and teaching of His word that our lives might be strengthened spiritually and that our
+                    spirits might be emboldened to carry out our God-given commission to go into all the world teaching
+                    the good news of salvation and making disciples of those who believe. Also upon the first day of the
+                    week, in order to support the works of His kingdom locally and throughout the world, we give back to
+                    Him in a financial way as He has prospered us. We find our instructions for these efforts to honor
+                    Him in the New Testament and will gladly show them to any who are interested in the same.
+                </p>
+            </div>
+            <div class="col-outer">
+                <h2 class="mb-3">Concerning Salvation</h2>
+                <p>As to doctrine, we have no creed but Christ. We believe that the Holy Bible is just that, holy; it is
+                    inspired (from the very breath) of God. While we have bothers and sisters of like precious faith
+                    throughout the world we are not connected to any earthly religious body or headquarters and only
+                    submit to the rule of Heaven itself. To become a part of that body of believers, according to God's
+                    word one must come to know and trust the grace of the God of heaven by hearing the word of Christ
+                    (Romans 10:17).</p>
+                <p>Having come to a faith-filled knowledge of Him and of His Son we know we cannot be
+                    in His eternal fellowship unless we are willing to turn from and put to death any passion for sin
+                    and choose rather to be His disciple (Luke 13:3; Romans 6:10). Because Jesus is the Son of God and
+                    because God has made Him King of kings and Lord of lords, we willingly and passionately confess His
+                    name (Matthew 10:32-33, Romans 10:10) and submit to the washing away of the guilt of all past sins
+                    in the blood of Christ through the God-given medium of baptism in water (Acts 2:38, 22:16). We
+                    strive to walk with Him in light, looking to Him for guidance, and asking for His forgiveness for
+                    our failures, which He mercifully and willingly gives (1 John 1:5-9).
+                </p>
+            </div>
+            <div class="col-outer">
+                <h2 class="mb-3">What We Do</h2>
+                <p>Matthew 28:19 "Go therefore and make disciples of all the nations, baptizing them in the name of the
+                    Father and of the Son and of the Holy Spirit, 20 teaching them to observe all things that I have
+                    commanded you; and lo, I am with you always, even to the end of the age." These are Matthew's last
+                    recorded words of Jesus. We often focus on verse 19 where He speaks of baptizing those who are made
+                    disciples. But there is more here than just baptizing those who believe, though that is certainly
+                    important. The mission we have received from the Lord Himself also includes teaching the baptized
+                    believers all things that Jesus had taught or commanded the apostles.</p>
+                <p>Wow! What a mission!
+                    Submitting to His Lordship, we at the Church of Christ Karmanghat, Hyderabad, hope to help people
+                    come to know our Lord. We want people to understand that the Son of God has come into the world to
+                    pay our sin debt and to show us the way to heaven. Our Christianity cannot simply be a ritualistic
+                    baptism and a few church services. Our Christianity must be a way of life that demonstrates the way
+                    of life that Jesus teaches us. So, it is our mission to show people how to belong to Christ and how
+                    to live with Christ living in us. We want people to know how to show mercy, how to forgive, how to
+                    be longsuffering, how to extend grace, how to be humble, how to have courage in the face of
+                    opposition, how to pray, how to live each day seeking to glorify God. Our mission, be it at home or
+                    abroad is to make disciples and to teach them to observe all things He has commanded us, and we do
+                    it with the sure knowledge that He is with us until the end.
+                </p>
+            </div>
+        </div>
+    </div>
+    <p id="contact"></p>
+</section>
+
+
+<!-- Contact us section start -->
+
+<section class="contact-us-section about-section-outer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 greeting-col col-outer audio-heading">
+                <h2 class="mb-3">Directions: Navigation</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3808.8487639311006!2d78.5400157968411!3d17.32284462018032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bcba26c2da01ab7%3A0x5c5ff2f1b939704b!2sTKR%20Bus%20Stop%2C%20Lakshmi%20Nagar%20Colony%20Park%2C%20Hanuman%20Nagar%20Colony%2C%20Meerpet%2C%20Telangana%2C%20India!3m2!1d17.3231094!2d78.53841349999999!4m5!1s0x3bcba2135c4f5f71%3A0x975cca5096948030!2schurch%20of%20christ%20hyderabad!3m2!1d17.321197299999998!2d78.5444815!5e0!3m2!1sen!2sus!4v1603657231123!5m2!1sen!2sus"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                <span>Contact Us</span>
+                <p><b>Address:</b> Church Of Christ, Regd. No. 765/2002. Plot No: 272, Shivaganga hills, karmanghat,
+                    Saroor
+                    nagar Mandal, Hyderabad, Telangana, India - 500097</p>
+                <p><b>Phone:</b> +91 9701648506, +91 9866702817</p>
+                <p><b>Email:</b> kdanam@gmail.com</p>
+            </div>
+            <div class="col-md-3 greeting-col col-outer audio-heading">
+                <h2 class="mb-3">Audio Songs</h2>
+                <div class="bigbox">
+                    <label for="" class="mb-1">Savior</label>
+                    <audio src="assets/audio/savior.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <label for="" class="mt-2 mb-1">Swachanda wasi</label>
+                    <audio src="assets/audio/swachandawasi.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <label for="" class="mt-2 mb-1">Margamu chupumu</label>
+                    <audio src="assets/audio/margamu_chupumu.mp3" controls="" id="audioPlayer">
+                    </audio>
+                </div>
+            </div>
+            <div class="col-md-3 greeting-col col-outer audio-heading">
+                <h2 class="mb-3">Bible Study Audio Recording</h2>
+                <div class="bigbox">
+                    <audio src="assets/audio/12062020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/12052020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/11222020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/11152020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/11142020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/11012020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/10312020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/10252020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                    <audio src="assets/audio/10182020.mp3" controls="" id="audioPlayer">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us section start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 greeting-col col-outer p-0">
+                <div class="audio-heading contact-us-section p-3 mt-5">
+                    <h2 class="mb-3 ">Prayer request or suggestion</h2>
+                    <form class="" [formGroup]="contactForm" (ngSubmit)="submit(contactForm)">
+                        <div class="form-col">
+                            <input type="text" placeholder="Full Name" formControlName="fname" class="form-control">
+                        </div>
+                        <div class="form-col">
+                            <input type="mail" placeholder="Your E-Mail" formControlName="email" class="form-control">
+                            <span *ngIf="contactForm.hasError('email', 'email')" class="error-show">
+                                Please enter the correct email.
+                            </span>
+                        </div>
+                        <div class="form-col">
+                            <!-- <input type="mail" placeholder="Message" formControlName="message" class="form-control"> -->
+                            <textarea formControlName="message" class="form-control" placeholder="Message"> </textarea>
+                        </div>
+                        <div class="form-col mb-0">
+                            <button type="submit" class="custom-btn contact-button" data-bs-toggle="modal"
+                                data-bs-target="#successmodal">
+                                <!-- <span><i class="bi bi-arrow-right"></i></span> -->
+                                Submit</button>
+                        </div>
+                        <div *ngIf="showdiv"
+                            class="alert alert-success d-flex align-items-center w-100 m-0 justify-content-center"
+                            role="alert">
+                            Your message is successfully Sent.
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact us section end -->

@@ -1,44 +1,29 @@
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { EventsComponent } from './events/events.component';
-import { ContactComponent } from './contact/contact.component';
-import { LeftColumnComponent } from './home/left-column/left-column.component';
-import { CenterColumnComponent } from './home/center-column/center-column.component';
-import { RightColumnComponent } from './home/right-column/right-column.component';
-import { BannerComponent } from './home/banner/banner.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { SlideInNavComponent } from './slide-in-nav/slide-in-nav.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    EventsComponent,
-    ContactComponent,
-    LeftColumnComponent,
-    CenterColumnComponent,
-    RightColumnComponent,
-    BannerComponent,
-    HeaderComponent,
     FooterComponent,
-    CarouselComponent,
-    SlideInNavComponent
+    HeaderComponent,
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
