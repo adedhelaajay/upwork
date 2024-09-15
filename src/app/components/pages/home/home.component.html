@@ -1,12 +1,16 @@
 <!-- Home Section Start -->
 <p id="home" style="padding-top: 65px;"></p>
-<span class="bi bi-arrow-right-circle" id="show_leftNav" (click)="showtoggle()" title="Show Left Nav"></span>
-<section class="left-nav active">
+<span class="bi bi-arrow-right-circle" id="show_leftNav" (mouseenter)="showtoggle()" title="Show Left Nav"></span>
+
+<section class="left-nav active" (mouseleave)="toggle()">
     <span class="bi bi-x-circle" id="close-sidenav" (click)="toggle()"></span>
     <ul class="custom-nav" style="flex-direction: column;gap: 12px;">
         <li class="services-dropdown-links">
             <a class="nav-link" href="#our_preacher">
                 Our Preacher
+            </a>
+            <a class="nav-link" href="#Prayer_suggestion">
+                Prayer Or Suggestion
             </a>
         </li>
     </ul>
@@ -83,54 +87,6 @@
     </div>
 </section>
 
-<!-- Greetings Section start-->
-<section id="our_preacher" class="greeting-section-outer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 greeting-col col-outer">
-                <h2>Greetings</h2>
-                <span>Our Preacher</span><br>
-                <span>Krupadanam Adedhela <sub>Minister</sub></span>
-                <p>Krupadanam was born in Hyderabad worked in the Agriculture department, holding doctorate degree in
-                    Divinity of Arts, Retired as , His parents were AP Israel and (), being raised in a denominational
-                    background including Methodist and Baptist. Krupadanam is married to Anna Christina Pulagala and
-                    blessed with four children</p>
-                <p>In 1978 he obeyed the gosple, left Methodist and was added to the Lord's Church. He was taught by Br.
-                    Prakasam, his uncle and is being an evangelist before taking up full time ministry, latter
-                    constructed a church-facility to further the kingdom of God.</p>
-            </div>
-            <div class="col-md-5 greeting-col col-outer carousel-img">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="assets/img/001.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="assets/img/002.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="assets/img/003.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="assets/img/004.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Greetings Section end -->
 
 <section class="about-section-outer" id="about-us">
     <div class="container">
@@ -222,12 +178,68 @@
             </div>
         </div>
     </div>
-    <p id="contact"></p>
 </section>
+
+<!-- Greetings Section start-->
+<section id="our_preacher" class="greeting-section-outer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 greeting-col col-outer">
+                <h2>Greetings</h2>
+                <span>Our Preacher</span><br>
+                <span>Krupadanam Adedhela <sub>Minister</sub></span>
+                <p>Krupadanam was born in Hyderabad worked in the Agriculture department, holding doctorate degree in
+                    Divinity of Arts, Retired as , His parents were AP Israel and (), being raised in a denominational
+                    background including Methodist and Baptist. Krupadanam is married to Anna Christina Pulagala and
+                    blessed with four children</p>
+                <p>In 1978 he obeyed the gosple, left Methodist and was added to the Lord's Church. He was taught by Br.
+                    Prakasam, his uncle and is being an evangelist before taking up full time ministry, latter
+                    constructed a church-facility to further the kingdom of God.</p>
+            </div>
+            <div class="col-md-5 greeting-col col-outer carousel-img">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/img/001.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/002.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/003.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/004.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <p id="contact"></p> -->
+</section>
+<!-- Greetings Section end -->
 
 
 <!-- Contact us section start -->
 
+<section class="about-section-outer" id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Contact Us</h2>
+        </div>
+    </div>
+</section>
 <section class="contact-us-section about-section-outer">
     <div class="container">
         <div class="row">
@@ -237,7 +249,6 @@
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3808.8487639311006!2d78.5400157968411!3d17.32284462018032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bcba26c2da01ab7%3A0x5c5ff2f1b939704b!2sTKR%20Bus%20Stop%2C%20Lakshmi%20Nagar%20Colony%20Park%2C%20Hanuman%20Nagar%20Colony%2C%20Meerpet%2C%20Telangana%2C%20India!3m2!1d17.3231094!2d78.53841349999999!4m5!1s0x3bcba2135c4f5f71%3A0x975cca5096948030!2schurch%20of%20christ%20hyderabad!3m2!1d17.321197299999998!2d78.5444815!5e0!3m2!1sen!2sus!4v1603657231123!5m2!1sen!2sus"
                     width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
-                <span>Contact Us</span>
                 <p><b>Address:</b> Church Of Christ, Regd. No. 765/2002. Plot No: 272, Shivaganga hills, karmanghat,
                     Saroor
                     nagar Mandal, Hyderabad, Telangana, India - 500097</p>
@@ -284,7 +295,7 @@
         </div>
     </div>
     <!-- Contact us section start -->
-    <div class="container">
+    <div id="Prayer_suggestion" class="container">
         <div class="row">
             <div class="col-md-12 greeting-col col-outer p-0">
                 <div class="audio-heading contact-us-section p-3 mt-5">
