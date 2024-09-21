@@ -35,7 +35,6 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "src/assets/js/bootstrap.min.js"
-
             ],
             "browser": "src/main.ts"
           },
@@ -99,11 +98,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "080887c8-b38c-472f-ac7f-fff12167e348"
+    "analytics": "080887c8-b38c-472f-ac7f-fff12167e348",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
