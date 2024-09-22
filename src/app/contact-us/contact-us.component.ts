@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl,FormControlName, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl,FormControlName, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent {
   contactForm:FormGroup;
   contactForm2:FormGroup;
-  showdiv: any=false;
+  showdiv: boolean=false;
   constructor(private http: HttpClient) { 
 
     this.contactForm = new FormGroup({
@@ -51,7 +51,6 @@ export class HomeComponent {
 			}
 		});
 
-    const formData = contactForm.value;
     this.http.post('https://cf80f2yh59.execute-api.us-east-1.amazonaws.com/dev/myLamdaDemo', data)
       .subscribe({
         next: (response) => {
