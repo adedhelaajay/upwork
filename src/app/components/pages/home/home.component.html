@@ -69,7 +69,7 @@
                     </span>
                 </div>
                 <div class="form-col">
-                    <input type="mail" placeholder="Message" formControlName="message" class="form-control">
+                    <input type="text" placeholder="Message" formControlName="message" class="form-control">
                     <!-- <textarea formControlName="message" class="form-control" placeholder="Message"> </textarea> -->
                 </div>
                 <div class="form-col mb-0">
@@ -78,11 +78,11 @@
                         <!-- <span><i class="bi bi-arrow-right"></i></span> -->
                         Submit</button>
                 </div>
-                <div *ngIf="showdiv"
-                    class="alert alert-success d-flex align-items-center w-100 m-0 justify-content-center" role="alert">
-                    Your message is successfully Sent.
-                </div>
             </form>
+        </div>
+        <div *ngIf="showdiv"
+            class="alert alert-success d-flex align-items-center justify-content-center" role="alert">
+            Your message is successfully Sent.
         </div>
     </div>
 </section>

@@ -17,8 +17,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
         HomeComponent,
         ContactUsComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        ReactiveFormsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+    bootstrap: [AppComponent], 
+    imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+    providers: [provideHttpClient(withInterceptorsFromDi())] })
+
 export class AppModule { }
