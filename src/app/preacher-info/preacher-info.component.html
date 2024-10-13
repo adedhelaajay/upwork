@@ -1,0 +1,49 @@
+<div class="preacher-overlay preacher-info" *ngIf="isVisible" (click)="closeOverlay($event)">
+    <div class="preacher-content" (click)="$event.stopPropagation()">
+        <button class="close-btn" (click)="close()">X</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 greeting-col col-outer content-text"> 
+                    <h2>Greetings</h2>
+                    <h3>Bro. Krupadanam Adedhela</h3> 
+                    <address>
+                        <p>Krupadanam was born in Tandoor and was brought up in Hyderabad worked in Goverment and Retired as Deputy Director of Agriculture.
+                            His parents late Mr. AP Israel and Mrs. Nanamma, being raised in a denominational
+                            background including Methodist and Baptist. Krupadanam is married to Anna Christina Pulagala and
+                            blessed with four children <br>
+                        In 1978 he was introduce to the true gosple of Jesus Christ by late Bro. Prakasam Pulaga. 
+                            Since then left denominationalish and obeyed the gosple was added to the Lord's Church.</p>
+                    </address>
+                </div>
+                <div class="col-md-5 greeting-col col-outer carousel-img">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="assets/img/001.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/img/002.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/img/003.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/img/004.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

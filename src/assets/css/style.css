@@ -176,7 +176,7 @@ header nav.navbar.navbar-expand-lg {
 }
 
 .greeting-section-outer {
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 .col-outer h2 {
   font-size: 35px;
@@ -200,10 +200,14 @@ header nav.navbar.navbar-expand-lg {
 .col-outer p {
   margin-bottom: 20px;
 }
-
+.gray-scale {
+  color: white; /* Sets the text color to white */
+  background-color: #35424a; /* Sets the background for all the text */
+}
 /* About us Section Start */
 .about-section-outer {
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding-top: 80px;
   background-color: #363b8b;
 }
 .about-section-outer .section-heading {
@@ -369,6 +373,13 @@ footer {
 .newsletter-section-outer.about-section-outer {
   padding: 20px;
 }
+/* using image as the backgroud for the first-page tag
+.newsletter-section-outer.about-section-outer.first-page {
+  background-image: url(../img/Church-name.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
 .newsletter-form {
   width: 70%;
   gap: 15px;
@@ -405,7 +416,7 @@ footer {
   }
 }
 .home-section-outer.homeSecond-outer.homeSecond-third {
-  height: 70vh;
+  height: 80vh;
 }
 section.left-nav {
   position: fixed;
@@ -479,3 +490,13 @@ span#close-sidenav {
   margin-left: auto;
   transition: all 0.5s ease-in-out;
 }
+
+address {
+  font-style: italic; /* Makes text italic */
+  color: #333; /* Changes text color */
+  background-color: #f9f9f9; /* Sets a light gray background */
+  padding: 10px; /* Adds some padding */
+  border: 1px solid #ddd; /* Adds a border */
+  border-radius: 5px; /* Rounds the corners */
+}
+

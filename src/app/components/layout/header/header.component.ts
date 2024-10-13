@@ -60,6 +60,22 @@ export class HeaderComponent {
     }
   }
 
+  goToRecordingPage(){
+
+    const aboutpage = window.document.getElementById("recording")
+    if (aboutpage === null) {
+      this.router.navigate(['/recording']);
+    } else {
+      // since you've done the nullable check
+      // TS won't complain from this point on
+      aboutpage.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      }); // <- no error
+    }
+  }
+
   goToHomePage(){
 
     const aboutpage = window.document.getElementById("home")

@@ -1,0 +1,76 @@
+.preacher-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* full-screen overlay with semi-transparent background */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: flex-start; /* Align content to the top */
+    z-index: 1000; /* ensure it stays on top */
+    padding: 20px; /* Adds padding to prevent content from being too close to edges on smaller screens */
+    box-sizing: border-box; /* Ensures padding does not overflow */
+    overflow-y: auto; /* Make sure the overlay can scroll */
+  }
+  
+  .preacher-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Take up 80% of the screen width */
+    height: auto;
+    /* height: 80%; Take up 80% of the screen height */
+    max-width: 1000px; /* Prevent it from becoming too large */
+    /* max-height: 90%; Prevent it from occupying too much vertical space */
+    max-height: 90vh; /* Limit the height to 90% of the viewport height */
+    text-align: center;
+    position: relative; /* Necessary for close button positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    box-sizing: border-box; /* Prevent padding from overflowing the box */
+  }
+  
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black; /* Set close button to black */
+  }
+  
+  .close-btn:hover {
+    color: darkgray; /* Optional hover effect */
+  }
+
+
+  /* Responsive CSS */
+  
+  @media (max-width: 600px) {
+    .preacher-content {
+      width: 90%; /* For smaller screens, increase the width slightly */
+      max-height: 85vh; /* Slightly reduce max height on smaller devices */
+      /* max-height: 85%; Slightly reduce the height on smaller screens */
+      /* height: 90%; Use more of the screen height */
+      padding: 15px; /* Reduce padding */
+    }
+
+    .close-btn {
+        font-size: 20px; /* Reduce close button size for smaller screens */
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    .preacher-content {
+      width: 60%; /* Reduce the width for very large screens */
+    }
+  }
+  

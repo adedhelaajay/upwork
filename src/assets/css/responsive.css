@@ -3,6 +3,7 @@
 @media screen and (max-width: 1500px) {
   .container {
     max-width: 1300px;
+    margin-top: 20px;
   }
   .newsletter-section-outer.about-section-outer .section-heading {
     width: 35%;
@@ -12,6 +13,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .col-md-6.greeting-col.col-outer {
+    margin-top: 15px;
+  }
   .col-md-6.greeting-col.col-outer.audio-heading {
     width: 100%;
   }

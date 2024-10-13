@@ -9,13 +9,16 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PreacherInfoComponent } from './preacher-info/preacher-info.component';
+
 
 @NgModule({ declarations: [
         AppComponent,
         FooterComponent,
         HeaderComponent,
         HomeComponent,
-        ContactUsComponent
+        ContactUsComponent,
+        PreacherInfoComponent
     ],
     bootstrap: [AppComponent], 
     imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
